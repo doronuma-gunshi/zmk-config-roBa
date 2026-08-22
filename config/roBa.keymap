@@ -125,9 +125,9 @@
 
         NUM_SYMBOL {
             bindings = <
-&kp LEFT_ARROW  &kp N7  &kp N8  &kp N9        &kp RIGHT_ARROW                         &kp PERCENT      &kp CARET   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE
-&mt LCTRL HOME  &kp N4  &kp N5  &kp N6        &kp ASTERISK     &kp SLASH      &trans  &kp EXCLAMATION  &kp AT      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON
-&kp LEFT_SHIFT  &kp N1  &kp N2  &kp NUMBER_3  &kp PLUS         &kp MINUS      &trans  &kp HASH         &kp DOLLAR  &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES      &kp SEMICOLON
+&kp LEFT_ARROW  &kp N7  &kp N8  &kp N9        &kp RIGHT_ARROW                         &kp HASH         &kp DOLLAR  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE
+&kp LCTRL       &kp N4  &kp N5  &kp N6        &kp ASTERISK     &kp SLASH      &trans  &kp EXCLAMATION  &kp AT      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON
+&kp LEFT_SHIFT  &kp N1  &kp N2  &kp NUMBER_3  &kp PLUS         &kp MINUS      &trans  &kp PERCENT      &kp CARET   &kp AMPERSAND         &kp ASTERISK           &kp SINGLE_QUOTE
 &trans          &kp N0  &KP_00  &kp PERIOD    &kp EQUAL        &trans         &trans  &trans                                                                    &kp BACKSLASH
             >;
         };
