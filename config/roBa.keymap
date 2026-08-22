@@ -116,10 +116,10 @@
 
         FUNC_ARROW {
             bindings = <
-&kp TAB         &kp LS(LC(TAB))  &kp LC(TAB)  &trans  &trans                              &trans         &kp RC(RS(TAB))  &kp UP_ARROW    &kp RC(TAB)      &trans
-&kp LCTRL       &kp F1           &kp F2       &kp F3  &kp F4  &kp F5       &kp PAGE_UP    &kp HOME       &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_WIN
-&kp LEFT_SHIFT  &kp F6           &kp F7       &kp F8  &kp F9  &kp F10      &kp PAGE_DOWN  &kp END        &trans           &trans          &trans           &kp RSHFT
-&trans          &trans           &trans       &trans  &trans  &trans       &trans         &kp RIGHT_ALT                                                    &kp RS(RG(S))
+&kp TAB         &trans  &trans  &trans  &trans                              &trans         &kp RC(RS(TAB))  &kp UP_ARROW    &kp RC(TAB)      &trans
+&kp LCTRL       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5       &kp PAGE_UP    &kp HOME       &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_WIN
+&kp LEFT_SHIFT  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10      &kp PAGE_DOWN  &kp END        &trans           &trans          &trans           &kp RSHFT
+&trans          &trans  &trans  &trans  &trans  &trans       &trans         &kp RIGHT_ALT                                                    &kp RS(RG(S))
             >;
         };
 
