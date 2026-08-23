@@ -76,7 +76,7 @@
         KP_00: KP_00 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp KP_NUMBER_0 &kp KP_NUMBER_0>;
+            bindings = <&kp N0 &kp N0>;
             label = "KP_00";
         };
     };
