@@ -91,15 +91,6 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
         };
-
-        alt_tab: alt_tab {
-            compatible = "zmk,behavior-tri-state";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press &kp LALT>,
-                <&kp TAB>,
-                <&macro_release &kp LALT>;
-        };
     };
 
     keymap {
