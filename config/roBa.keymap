@@ -107,10 +107,10 @@
 
         FUNC_ARROW {
             bindings = <
-&kp TAB         &trans  &trans  &trans  &trans                              &trans         &kp RC(RS(TAB))  &kp UP_ARROW    &kp RC(TAB)      &trans
+&kp TAB         &none   &none   &none   &none                               &none          &kp RC(RS(TAB))  &kp UP_ARROW    &kp RC(TAB)      &none
 &kp LCTRL       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5       &kp PAGE_UP    &kp HOME       &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RIGHT_WIN
-&kp LEFT_SHIFT  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10      &kp PAGE_DOWN  &kp END        &trans           &trans          &trans           &kp RSHFT
-&trans          &trans  &trans  &trans  &trans  &trans       &trans         &kp RIGHT_ALT                                                    &kp RS(RG(S))
+&kp LEFT_SHIFT  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10      &kp PAGE_DOWN  &kp END        &none            &none           &none            &kp RSHFT
+&none           &none   &none   &none   &none   &none        &none          &kp RIGHT_ALT                                                    &kp RS(RG(S))
             >;
         };
 
@@ -125,37 +125,37 @@
 
         BLANC {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&none  &none  &none  &none  &none                    &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none      &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none      &none  &none                       &none
             >;
         };
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                          &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp ESCAPE      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans                              &trans
+&none  &none  &none  &none  &none                         &none  &none     &none     &none  &none
+&none  &none  &none  &none  &none  &kp ESCAPE      &none  &none  &mkp MB1  &mkp MB2  &none  &none
+&none  &none  &none  &none  &none  &none           &none  &none  &none     &none     &none  &none
+&none  &none  &none  &none  &none  &none           &none  &none                             &none
             >;
         };
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                          &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp ESCAPE      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans                              &trans
+&none  &none  &none  &none  &none                         &none  &none     &none     &none  &none
+&none  &none  &none  &none  &none  &kp ESCAPE      &none  &none  &mkp MB1  &mkp MB2  &none  &none
+&none  &none  &none  &none  &none  &none           &none  &none  &none     &none     &none  &none
+&none  &none  &none  &none  &none  &none           &none  &none                             &none
             >;
         };
 
         BT {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR_ALL
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &trans
+&none  &none         &none         &none         &none                          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&none  &none         &none         &none         &none  &none      &none        &none         &none         &none         &none         &bt BT_CLR
+&none  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none  &none      &bootloader  &none         &none         &none         &none         &bt BT_CLR_ALL
+&none  &none         &none         &none         &none  &none      &none        &none                                                   &none
             >;
         };
     };
