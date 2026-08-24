@@ -9,8 +9,12 @@
 };
 
 &trackball {
-    automouse-layer = <4>;
-    scroll-layers = <5>;
+    // automouse-layer = <4>;  // ← オートマウスのみコメントアウトして無効化
+    scroll-layers = <5>;       // ← スクロール機能は残す
+};
+
+&trackball_listener {
+    input-processors = <&zip_temp_layer 4 300>;
 };
 
 / {
