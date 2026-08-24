@@ -23,7 +23,7 @@
     scroll-layers = <5>;       // ← スクロール機能は残す
 };
 
-&trackball_listener { input-processors = <&zip_temp_layer 4 300>; };
+&trackball_listener { input-processors = <&zip_temp_layer 4 200>; };
 
 / {
     combos {
