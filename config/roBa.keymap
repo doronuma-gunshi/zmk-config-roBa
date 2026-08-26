@@ -141,10 +141,10 @@
 
         FUNC_ARROW {
             bindings = <
-&trans          &kp LC(F1)  &none   &none   &kp LA(F4)                      &none          &none           &kp UP_ARROW    &none            &none
-&kp LCTRL       &kp F1      &kp F2  &kp F3  &kp F4      &kp F5      &trans  &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RCTRL
-&kp LEFT_SHIFT  &kp F6      &kp F7  &kp F8  &kp F9      &trans      &trans  &kp PAGE_DOWN  &kp HOME        &none           &kp END          &kp RSHFT
-&trans          &none       &none   &none   &none       &none       &none   &none                                                           &none
+&trans          &kp LC(F1)  &none    &none   &kp LA(F4)                      &none          &none           &kp UP_ARROW    &none            &none
+&kp LCTRL       &kp F1      &kp F2   &kp F3  &kp F4      &kp F5      &trans  &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RCTRL
+&kp LEFT_SHIFT  &kp F6      &kp F7   &kp F8  &kp F9      &trans      &trans  &kp PAGE_DOWN  &kp HOME        &none           &kp END          &kp RSHFT
+&trans          &kp F11     &kp F12  &none   &none       &none       &none   &kp LEFT_ALT                                                    &none
             >;
         };
 
@@ -159,10 +159,10 @@
 
         MOUSE {
             bindings = <
-&none           &none   &none  &none  &none                     &none  &none     &none  &none     &none
-&kp LCTRL       &kp GT  &none  &none  &none  &trans      &none  &none  &mkp MB1  &none  &mkp MB2  &mo 5
-&kp LEFT_SHIFT  &none   &none  &none  &none  &none       &none  &none  &none     &none  &none     &none
-&none           &none   &none  &none  &none  &none       &none  &none                             &none
+&none           &none  &none  &none  &none                     &none  &none     &kp UP_ARROW    &none     &none
+&kp LCTRL       &none  &none  &none  &none  &trans      &none  &none  &mkp MB1  &kp DOWN_ARROW  &mkp MB2  &mo 5
+&kp LEFT_SHIFT  &none  &none  &none  &none  &none       &none  &none  &none     &none           &none     &kp RIGHT_SHIFT
+&none           &none  &none  &none  &none  &none       &none  &none                                      &none
             >;
         };
 
