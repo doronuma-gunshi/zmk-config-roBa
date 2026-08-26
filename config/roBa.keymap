@@ -32,7 +32,7 @@
 
 &trackball_listener {
     // &zip_xy_scaler の後ろにある数値 <分子 分母> で速度を調整できます。
-    input-processors = <&zip_xy_scaler 3 2>, <&zip_temp_layer 4 200>;
+    input-processors = <&zip_xy_scaler 3 2>, <&zip_temp_layer 4 300>;
 };
 
 / {
