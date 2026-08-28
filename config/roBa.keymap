@@ -101,7 +101,7 @@
 &kp TAB           &kp W          &kp E         &kp R               &kp T                                          &kp Y        &kp U  &kp I      &kp O    &kp P
 &mt LCTRL A       &kp S          &kp D         &kp F               &kp G        &escape            &lt 6 DELETE   &kp H        &kp J  &kp K      &kp L    &lt 5 MINUS
 &mt LEFT_SHIFT Z  &kp X          &kp C         &kp V               &kp B        &none              &mt RCTRL F10  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp Q             &kp LG(SPACE)  &kp LEFT_WIN  &mt LEFT_ALT SPACE  &lt 2 SPACE  &kp LA(GRAVE)      &kp BACKSPACE  &lt 2 ENTER                             &kp RG(RS(S))
+&kp Q             &kp LG(SPACE)  &kp LEFT_WIN  &mt LEFT_ALT SPACE  &lt 2 SPACE  &kp LA(GRAVE)      &kp BACKSPACE  &lt 1 ENTER                             &kp RG(RS(S))
             >;
         };
 
