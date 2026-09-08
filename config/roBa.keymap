@@ -91,6 +91,30 @@
 
             tapping-term-ms = <200>;
         };
+
+        // チルダキー (通常: ~ / Shift: `)
+        mm_tilde: mod_morph_tilde {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE>, <&kp GRAVE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        // セミコロンキー (通常: : / Shift: ;)
+        mm_colon: mod_morph_colon {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp COLON>, <&kp SEMI>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        // シングルクオーテーションキー (通常: " / Shift: ')
+        mm_quote: mod_morph_quote {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES>, <&kp SQT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
