@@ -107,10 +107,10 @@
 
         SYMBOL_ARROW {
             bindings = <
-&trans          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL                        &none     &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN    &none
+&trans          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp EQUAL                        &none     &none           &kp UP_ARROW    &none            &none
 &kp LCTRL       &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS      &none       &none  &kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
-&kp LEFT_SHIFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK  &none       &none  &none     &none           &none           &none            &none
-&kp F11         &kp NUMBER_0  &trans        &trans        &kp PERIOD    &trans      &none  &none                                                      &none
+&kp LEFT_SHIFT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ASTERISK  &none       &none  &none     &kp PAGE_UP     &none           &kp PAGE_DOWN    &kp RIGHT_WIN
+&none           &kp NUMBER_0  &KP_00        &trans        &kp PERIOD    &trans      &none  &none                                                      &none
             >;
         };
 
