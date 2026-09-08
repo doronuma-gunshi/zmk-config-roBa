@@ -6,11 +6,6 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
-    zip_temp_layer: zip_temp_layer {
-        compatible = "zmk,input-processor-temp-layer";
-        #input-processor-cells = <2>;
-    };
-
     zip_xy_scaler: zip_xy_scaler {
         compatible = "zmk,input-processor-scaler";
         #input-processor-cells = <2>;
@@ -26,14 +21,12 @@
 
 &trackball {
     // automouse-layer = <4>;
-
     scroll-layers = <5>;
 };
 
 &trackball_listener {
     // &zip_xy_scaler の後ろにある数値 <分子 分母> で速度を調整できます。
-
-    input-processors = <&zip_xy_scaler 3 2>, <&zip_temp_layer 4 250>;
+    input-processors = <&zip_xy_scaler 3 2>;
 };
 
 / {
