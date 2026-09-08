@@ -42,12 +42,12 @@
 
         left_click {
             bindings = <&mkp MB1>;
-            key-positions = <18 19>;
+            key-positions = <18 21>;
         };
 
         right_cilck {
             bindings = <&mkp MB2>;
-            key-positions = <19 20>;
+            key-positions = <19 21>;
         };
 
         CONTEXT_MENU {
