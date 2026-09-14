@@ -35,9 +35,19 @@
     combos {
         compatible = "zmk,combos";
 
-        CONTEXT_MENU {
+        context_menu {
             bindings = <&kp K_CONTEXT_MENU>;
             key-positions = <31 32>;
+        };
+
+        left_click {
+            bindings = <&mkp MB1>;
+            key-positions = <32 18>;
+        };
+
+        right_click {
+            bindings = <&mkp MB2>;
+            key-positions = <19 32>;
         };
     };
 
