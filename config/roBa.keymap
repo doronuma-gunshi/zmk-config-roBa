@@ -160,10 +160,10 @@
 
         MOUSE {
             bindings = <
-&none           &none  &none  &none  &none                     &none               &none               &none                &none  &none
-&kp LCTRL       &none  &none  &none  &none  &trans      &none  &kp LA(UP_ARROW)    &mkp MB1            &mkp MB2             &none  &none
-&kp LEFT_SHIFT  &none  &none  &none  &none  &trans      &none  &none               &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &none  &kp K_APPLICATION
-&none           &none  &none  &none  &none  &none       &none  &kp LA(DOWN_ARROW)                                                  &none
+&none           &none  &none  &none  &none                     &none  &none     &none              &none  &none
+&kp LCTRL       &none  &none  &none  &none  &trans      &none  &none  &mkp MB1  &mkp MB2           &none  &none
+&kp LEFT_SHIFT  &none  &none  &none  &none  &trans      &none  &none  &none     &kp K_APPLICATION  &none  &none
+&none           &none  &none  &none  &none  &none       &none  &none                                      &none
             >;
         };
 
