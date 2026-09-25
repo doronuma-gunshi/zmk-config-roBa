@@ -68,65 +68,48 @@
         };
 
         //「ALt+↓」のメニュー誤作動防止マクロ
+
         alt_down_safe: alt_down_safe {
             label = "alt_down_safe";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <10>;
-            bindings
-                = <&macro_press &kp LALT>
-                • Somacro_tap &kp DOWN>
-                • samacro-pause_for_release>
-                • camacro_tap &kp F24>
-                , somacro_release &kp LALT»;
+            bindings = <&macro_press>, <&kp LALT kp>;
         };
 
         //「ALt+↑」のメニュー誤作動防止マクロ
+
         alt_up_safe: alt_up_safe {
             label = "alt_up_safe";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <10>;
-            bindings
-                = <&macro_press &kp LALT>
-                • Somacro_tap &kp UP>
-                • samacro-pause_for_release>
-                • camacro_tap &kp F24>
-                , somacro_release &kp LALT»;
+            bindings = <&macro_press>, <&kp LALT kp>;
         };
 
         //「ALt+←」のメニュー誤作動防止マクロ
+
         alt_left_safe: alt_left_safe {
             label = "alt_left_safe";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <10>;
-            bindings
-                = <&macro_press &kp LALT>
-                • Somacro_tap &kp LEFT>
-                • samacro-pause_for_release>
-                • camacro_tap &kp F24>
-                , somacro_release &kp LALT»;
+            bindings = <&macro_press>, <&kp LALT kp>;
         };
 
         //「ALt+→」のメニュー誤作動防止マクロ
+
         alt_right_safe: alt_right_safe {
             label = "alt_right_safe";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <10>;
-            bindings
-                = <&macro_press &kp LALT>
-                • Somacro_tap &kp RIGHT>
-                • samacro-pause_for_release>
-                • camacro_tap &kp F24>
-                , somacro_release &kp LALT»;
+            bindings = <&macro_press>, <&kp LALT kp>;
         };
-
     };
 
     behaviors {
@@ -194,10 +177,10 @@
 
         FUNC_ARROW {
             bindings = <
-&none      &kp LC(F1)      &none    &none   &kp LA(F4)                             &none               &none           &none           &none            &none
-&kp LCTRL  &kp F1          &kp F2   &kp F3  &kp F4      &kp F5      &kp PAGE_UP    &kp LA(UP_ARROW)    &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp RIGHT_WIN
-&none      &kp LEFT_SHIFT  &kp F6   &kp F7  &kp F8      &kp F9      &kp PAGE_DOWN  &kp LA(DOWN_ARROW)  &kp HOME        &kp DOWN_ARROW  &kp END          &none
-&none      &kp F11         &kp F12  &none   &none       &none       &none          &none                                                                &none
+&none      &kp LC(F1)      &none    &none   &kp LA(F4)                             &none           &none           &none           &none            &none
+&kp LCTRL  &kp F1          &kp F2   &kp F3  &kp F4      &kp F5      &kp PAGE_UP    &alt_up_safe    &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp RIGHT_WIN
+&none      &kp LEFT_SHIFT  &kp F6   &kp F7  &kp F8      &kp F9      &kp PAGE_DOWN  &alt_down_safe  &kp HOME        &kp DOWN_ARROW  &kp END          &none
+&none      &kp F11         &kp F12  &none   &none       &none       &none          &none                                                            &none
             >;
         };
 
@@ -221,10 +204,10 @@
 
         MOUSE {
             bindings = <
-&none      &none           &none  &none  &none                                  &none                &none     &none              &none  &none
-&kp LCTRL  &none           &none  &none  &none  &trans      &none               &none                &mkp MB1  &mkp MB2           &none  &none
-&none      &kp LEFT_SHIFT  &none  &none  &none  &none       &none               &none                &none     &kp K_APPLICATION  &none  &none
-&none      &none           &none  &none  &none  &none       &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)                                      &none
+&none      &none           &none  &none  &none                              &none            &none     &none              &none  &none
+&kp LCTRL  &none           &none  &none  &none  &trans      &none           &none            &mkp MB1  &mkp MB2           &none  &none
+&none      &kp LEFT_SHIFT  &none  &none  &none  &none       &none           &none            &none     &kp K_APPLICATION  &none  &none
+&none      &none           &none  &none  &none  &none       &alt_left_safe  &alt_right_safe                                      &none
             >;
         };
 
