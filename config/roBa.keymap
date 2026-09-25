@@ -66,6 +66,67 @@
             bindings = <&kp N0 &kp N0>;
             label = "KP_00";
         };
+
+        //「ALt+↓」のメニュー誤作動防止マクロ
+        alt_down_safe: alt_down_safe {
+            label = "alt_down_safe";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings
+                = <&macro_press &kp LALT>
+                • Somacro_tap &kp DOWN>
+                • samacro-pause_for_release>
+                • camacro_tap &kp F24>
+                , somacro_release &kp LALT»;
+        };
+
+        //「ALt+↑」のメニュー誤作動防止マクロ
+        alt_up_safe: alt_up_safe {
+            label = "alt_up_safe";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings
+                = <&macro_press &kp LALT>
+                • Somacro_tap &kp UP>
+                • samacro-pause_for_release>
+                • camacro_tap &kp F24>
+                , somacro_release &kp LALT»;
+        };
+
+        //「ALt+←」のメニュー誤作動防止マクロ
+        alt_left_safe: alt_left_safe {
+            label = "alt_left_safe";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings
+                = <&macro_press &kp LALT>
+                • Somacro_tap &kp LEFT>
+                • samacro-pause_for_release>
+                • camacro_tap &kp F24>
+                , somacro_release &kp LALT»;
+        };
+
+        //「ALt+→」のメニュー誤作動防止マクロ
+        alt_right_safe: alt_right_safe {
+            label = "alt_right_safe";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <10>;
+            bindings
+                = <&macro_press &kp LALT>
+                • Somacro_tap &kp RIGHT>
+                • samacro-pause_for_release>
+                • camacro_tap &kp F24>
+                , somacro_release &kp LALT»;
+        };
+
     };
 
     behaviors {
