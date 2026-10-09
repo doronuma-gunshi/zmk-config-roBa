@@ -14,9 +14,7 @@
         rows = <0>;
         events = <0>;
     };
-};
 
-/* roBa.dtsi 側で定義されている未完成の /kscan ノードを無効化 */
-/kscan {
-    status = "disabled";
+    /* roBa.dtsi 側の未定義 kscan ノードをルート配下から完全削除 */
+    /delete-node/ kscan;
 };
