@@ -7,16 +7,11 @@
         zmk,matrix-transform = &default_transform;
     };
 
-    /* ダミーノードの名称を mock_kscan に変更して名前の衝突を回避 */
+    /* ノード名を mock_kscan にすることで、roBa.dtsi の /kscan との衝突・合体を防ぐ */
     mock_kscan: mock_kscan {
         compatible = "zmk,kscan-mock";
         columns = <0>;
         rows = <0>;
         events = <0>;
     };
-};
-
-/* roBa.dtsi 側で定義されている原本の kscan ノードを無効化 */
-&kscan {
-    status = "disabled";
 };
