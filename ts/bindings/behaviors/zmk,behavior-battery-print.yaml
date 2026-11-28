@@ -1,0 +1,3 @@
+description: Type battery levels of central and peripheral
+compatible: "zmk,behavior-battery-print"
+include: zero_param.yaml
