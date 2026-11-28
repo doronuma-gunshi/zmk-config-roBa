@@ -213,7 +213,14 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-    };
+
+        // バッテリー残量表示
+
+        batp: battery_print {
+            compatible = "zmk,behavior-battery-print";
+            #binding-cells = <0>;
+        };
+};
 
     keymap {
         compatible = "zmk,keymap";
