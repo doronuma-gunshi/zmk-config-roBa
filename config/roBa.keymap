@@ -165,15 +165,8 @@
     };
 
     behaviors {
-        lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
 
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-        };
+        // ESCAPEは2回押しで発火
 
         escape: escape {
             compatible = "zmk,behavior-tap-dance";
@@ -219,6 +212,16 @@
         batp: battery_print {
             compatible = "zmk,behavior-battery-print";
             #binding-cells = <0>;
+        };
+
+        // hold-preferredのlt
+        lt_hold: lt_hold {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <175>;
+            quick-tap-ms = <0>;
+            bindings = <&mo>, <&kp>;
         };
     };
 
