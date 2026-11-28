@@ -1,10 +1,7 @@
 name: roBa
 build:
-  settings:
-    board_root: .
-name: zmk-behavior-battery-print
-build:
   cmake: .
   kconfig: Kconfig
   settings:
+    board_root: .
     dts_root: .
